@@ -2,6 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { GoogleOAuthProvider } from '@react-oauth/google';
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
+import GithubLogin from "./pages/GithubLogin";
+
 
 function App() {
   return (
@@ -10,7 +12,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<LoginPage />} />
-          <Route path="/loginpage" element={<HomePage />} />
+          <Route path="/homepage" element={<HomePage />} />
+        
         </Routes>
       </Router>
     </div>
