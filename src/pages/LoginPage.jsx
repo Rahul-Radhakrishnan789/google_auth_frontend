@@ -43,7 +43,7 @@ function LoginPage() {
       <br />
       {profile ? (
          <>
-         <GithubLogin />
+         {/* <GithubLogin /> */}
          <button onClick={login}>Sign in with Google 🚀 </button>
        </>
       ) : (
